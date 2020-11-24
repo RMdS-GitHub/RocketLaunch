@@ -13,6 +13,6 @@ onready var animationPlayer : AnimationPlayer = $AnimationPlayer
 # onready var animationPlayer = get_node("AnimationPlayer") 
 
 
-# Ready function, play the animation "Launch".
-func _ready() -> void:
+# Signal from LaunchButton when pressing it.
+func _on_LaunchButton_pressed() -> void:
 	animationPlayer.play("Launch")
